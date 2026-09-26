@@ -21,499 +21,361 @@ src="https://www.facebook.com/tr?id=1752825896012230&ev=PageView&noscript=1"
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>South Africa ZAR 10,000 Grants Ongoing | SA Financial Bulletin</title>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Get Your Free Grants</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Lora',Georgia,serif;background:#f7f7f5;color:#222;font-size:17px;line-height:1.78}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ── SITE CHROME ── */
-.top-ticker{background:#007a4d;color:#fff;font-family:'Inter',sans-serif;font-size:12.5px;font-weight:600;text-align:center;padding:9px 16px;letter-spacing:.02em}
-.top-ticker span{opacity:.85;font-weight:400;margin-left:8px}
+  :root {
+    --bg: #0a1628;
+    --card-bg: #ffffff;
+    --text-primary: #111827;
+    --text-muted: #6b7280;
+    --step-bg: #f3f4f6;
+    --step-num: #003087;
+    --btn-bg: #0070ba;
+    --btn-hover: #005ea6;
+    --btn-text: #ffffff;
+    --note-text: #9ca3af;
+    --green: #16a34a;
+    --green-bg: #f0fdf4;
+    --green-border: #bbf7d0;
+  }
 
-.site-nav{background:#fff;border-bottom:2px solid #007a4d;padding:0 20px}
-.nav-inner{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px}
-.nav-logo{display:flex;align-items:center;gap:10px}
-.nav-logo .flag{font-size:22px;line-height:1}
-.nav-logo strong{font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111;letter-spacing:-.01em}
-.nav-logo small{font-family:'Inter',sans-serif;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#888;display:block;margin-top:-2px}
-.nav-links{display:flex;gap:22px}
-.nav-links a{font-family:'Inter',sans-serif;font-size:13px;color:#555;text-decoration:none}
-.nav-links a:hover{color:#007a4d}
-@media(max-width:520px){.nav-links{display:none}}
+  html {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    background: var(--bg);
+  }
 
-/* ── CATEGORY BREADCRUMB ── */
-.breadcrumb{max-width:740px;margin:0 auto;padding:14px 20px 0;font-family:'Inter',sans-serif;font-size:12.5px;color:#999}
-.breadcrumb a{color:#007a4d;text-decoration:none}
-.breadcrumb span{margin:0 5px}
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: var(--bg);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 16px 40px;
+    padding-top: max(20px, env(safe-area-inset-top));
+    padding-bottom: max(40px, env(safe-area-inset-bottom));
+  }
 
-/* ── ARTICLE WRAPPER ── */
-.article-wrap{max-width:740px;margin:0 auto;padding:0 20px 60px}
+  .card {
+    background: var(--card-bg);
+    border-radius: 24px;
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  }
 
-/* ── HEADER ── */
-.article-header{padding:20px 0 0}
-.cat-badge{display:inline-block;background:#007a4d;color:#fff;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;padding:4px 10px;border-radius:3px;margin-bottom:16px}
+  /* ── Image Hero ── */
+  .hero-image {
+    width: 100%;
+    display: block;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: center;
+  }
 
-h1{font-family:'Lora',Georgia,serif;font-size:clamp(24px,5.5vw,42px);font-weight:700;line-height:1.2;color:#111;margin-bottom:16px;letter-spacing:-.01em}
-.kicker{color:#007a4d}
+  /* ── Content area ── */
+  .content {
+    padding: 20px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
 
-.subheadline{font-family:'Inter',sans-serif;font-size:17px;font-weight:400;color:#444;line-height:1.6;margin-bottom:22px}
+  /* ── Social proof bar ── */
+  .proof-bar {
+    width: 100%;
+    background: var(--green-bg);
+    border: 1.5px solid var(--green-border);
+    border-radius: 12px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .proof-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+    animation: blink 1.4s ease-in-out infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.3; }
+  }
+  .proof-avatars {
+    display: flex;
+    flex-shrink: 0;
+  }
+  .proof-avatars span {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .proof-avatars span:not(:first-child) { margin-left: -7px; }
+  .proof-avatars span:nth-child(1) { background: #0070ba; }
+  .proof-avatars span:nth-child(2) { background: #1e7e34; }
+  .proof-avatars span:nth-child(3) { background: #7c3aed; }
+  .proof-text {
+    font-size: 0.75rem;
+    color: #15803d;
+    font-weight: 600;
+    line-height: 1.35;
+  }
 
-/* ── META ROW ── */
-.meta-row{display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px;font-family:'Inter',sans-serif;font-size:13px;color:#888;padding:14px 0;border-top:1px solid #ddd;border-bottom:1px solid #ddd;margin-bottom:24px}
-.meta-avatar{width:32px;height:32px;border-radius:50%;background:#007a4d;color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.meta-author strong{color:#333;font-weight:600}
-.meta-dot{color:#ccc}
-.live-badge{display:inline-flex;align-items:center;gap:5px;background:#fff3f3;color:#c0392b;border:1px solid #f5c6c6;border-radius:20px;padding:3px 10px;font-weight:600;font-size:12px}
-.live-dot{width:7px;height:7px;background:#e74c3c;border-radius:50%;animation:blink 1.2s ease infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+  /* ── Headline ── */
+  .headline {
+    font-size: clamp(1rem, 4.5vw, 1.2rem);
+    font-weight: 800;
+    color: var(--text-primary);
+    text-align: center;
+    line-height: 1.3;
+  }
+  .headline .amount {
+    color: #0070ba;
+  }
 
-/* ── SHARE ROW ── */
-.share-row{display:flex;align-items:center;gap:8px;margin-bottom:24px;flex-wrap:wrap}
-.share-label{font-family:'Inter',sans-serif;font-size:12px;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
-.share-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:4px;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;cursor:pointer;border:none;text-decoration:none}
-.share-wa{background:#25d366;color:#fff}
-.share-fb{background:#1877f2;color:#fff}
-.share-tw{background:#000;color:#fff}
-.share-copy{background:#f0f0f0;color:#333}
+  .subline {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-align: center;
+    line-height: 1.55;
+    max-width: 320px;
+    margin-top: -6px;
+  }
 
-/* ── HERO IMAGE ── */
-.hero-img-wrap{margin:4px 0 28px;border-radius:8px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.1)}
-.hero-img-wrap img, .hero-img-wrap svg{width:100%;display:block}
-.img-caption{font-family:'Inter',sans-serif;font-size:11.5px;color:#999;padding:7px 0 0;text-align:center;font-style:italic}
+  /* ── Steps ── */
+  .steps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 
-/* ── ARTICLE BODY ── */
-.article-body p{margin-bottom:20px;color:#2a2a2a;max-width:660px}
-.article-body p.lead{font-size:18.5px;line-height:1.7;color:#111;font-weight:400;border-left:3px solid #ffb612;padding-left:16px;margin-bottom:28px}
+  .step {
+    background: var(--step-bg);
+    border-radius: 12px;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
 
-.pull-quote{background:#f0faf5;border-left:4px solid #007a4d;padding:18px 22px;margin:30px 0;border-radius:0 6px 6px 0}
-.pull-quote p{font-size:17px;font-style:italic;color:#1a4d35;margin:0;line-height:1.65}
+  .step-num {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--step-num);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
 
-/* ── GRANT BOX ── */
-.grant-box{background:#fff;border:2px solid #007a4d;border-radius:10px;padding:24px 26px;margin:28px 0;box-shadow:0 2px 12px rgba(0,122,77,.08)}
-.grant-box-title{font-family:'Inter',sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#007a4d;margin-bottom:10px}
-.grant-amount{font-family:'Lora',serif;font-size:38px;font-weight:700;color:#111;line-height:1;margin-bottom:6px}
-.grant-amount span{font-size:20px;color:#888;font-weight:400}
-.grant-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.grant-tag{background:#f0faf5;color:#007a4d;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;padding:5px 10px;border-radius:4px;border:1px solid #c6e8d8}
+  .step-text {
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    line-height: 1.4;
+  }
 
-/* ── SECTION HEADING ── */
-h2{font-family:'Lora',Georgia,serif;font-size:24px;font-weight:700;color:#111;margin:38px 0 14px;padding-bottom:10px;border-bottom:2px solid #007a4d}
+  /* ── CTA ── */
+  .cta-btn {
+    display: block;
+    width: 100%;
+    padding: 16px 20px;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 16px rgba(0,112,186,0.35);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .cta-btn:hover  { background: var(--btn-hover); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,112,186,0.45); }
+  .cta-btn:active { transform: translateY(0); box-shadow: 0 2px 8px rgba(0,112,186,0.3); }
+  .cta-btn:focus-visible { outline: 3px solid #003087; outline-offset: 3px; }
 
-/* ── STEPS ── */
-.steps{margin:4px 0 28px}
-.step{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid #eee;align-items:flex-start}
-.step:last-child{border-bottom:none}
-.step-num{min-width:42px;height:42px;background:#007a4d;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-weight:700;font-size:16px;flex-shrink:0}
-.step-body h3{font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111;margin-bottom:4px}
-.step-body p{font-family:'Inter',sans-serif;font-size:14px;color:#555;line-height:1.55;margin:0}
-.step-body p strong{color:#007a4d}
+  .note {
+    font-size: 0.7rem;
+    color: var(--note-text);
+    text-align: center;
+    line-height: 1.4;
+    margin-top: -6px;
+  }
 
-/* ── CTA BLOCK ── */
-.cta-block{background:linear-gradient(135deg,#007a4d 0%,#005e3b 100%);border-radius:10px;padding:32px 28px;text-align:center;margin:32px 0}
-.cta-block h3{font-family:'Lora',serif;font-size:22px;color:#fff;margin-bottom:8px}
-.cta-block p{font-family:'Inter',sans-serif;font-size:14px;color:rgba(255,255,255,.8);margin-bottom:22px}
-.cta-btn{display:inline-block;background:#ffb612;color:#111;font-family:'Inter',sans-serif;font-size:17px;font-weight:700;padding:17px 42px;border-radius:6px;text-decoration:none;cursor:pointer;border:none;letter-spacing:.01em;box-shadow:0 4px 18px rgba(0,0,0,.25);transition:transform .15s,box-shadow .15s}
-.cta-btn:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,0,0,.3)}
-.cta-micro{font-family:'Inter',sans-serif;font-size:12px;color:rgba(255,255,255,.6);margin-top:12px}
-.cta-micro span{margin:0 6px}
+  /* ── Toast popup ── */
+  .popup {
+    position: fixed;
+    bottom: max(20px, env(safe-area-inset-bottom, 20px));
+    left: 16px;
+    max-width: min(280px, calc(100vw - 32px));
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    pointer-events: none;
+    border-left: 4px solid #0070ba;
+  }
+  .popup.show { opacity: 1; transform: translateY(0); }
 
-/* ── DIVIDER ── */
-hr.sec{border:none;border-top:1px solid #ddd;margin:36px 0}
+  .pop-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .pop-name  { font-size: 0.78rem; font-weight: 700; color: #111827; }
+  .pop-msg   { font-size: 0.7rem; color: #4b5563; margin-top: 2px; }
+  .pop-badge { font-size: 0.62rem; color: #0070ba; font-weight: 700; margin-top: 2px; }
+  .pop-time  { font-size: 0.62rem; color: #9ca3af; margin-top: 1px; }
 
-/* ── TESTIMONIALS ── */
-.testi-intro{font-family:'Inter',sans-serif;font-size:14px;color:#666;margin-bottom:20px}
-.testimonials{display:flex;flex-direction:column;gap:16px}
-.testimonial{background:#fff;border-radius:8px;padding:20px 22px;box-shadow:0 1px 6px rgba(0,0,0,.07);border:1px solid #ebebeb}
-.stars{color:#f59e0b;font-size:14px;margin-bottom:10px}
-.testi-text{font-size:15px;color:#333;line-height:1.68;font-style:italic;margin-bottom:14px}
-.testi-footer{display:flex;align-items:center;gap:12px}
-.avi{width:42px;height:42px;border-radius:50%;font-family:'Inter',sans-serif;font-weight:700;font-size:16px;color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.av1{background:#007a4d}.av2{background:#c0392b}.av3{background:#2980b9}.av4{background:#7d3c98}
-.testi-info strong{display:block;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111}
-.testi-info span{font-family:'Inter',sans-serif;font-size:12px;color:#999}
-.verified{display:inline-flex;align-items:center;gap:4px;font-family:'Inter',sans-serif;font-size:11px;color:#007a4d;font-weight:600;margin-top:3px}
-
-/* ── FAQ ── */
-.faq{margin:4px 0 28px}
-.faq-item{border-bottom:1px solid #eee;padding:16px 0}
-.faq-q{font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111;margin-bottom:6px}
-.faq-a{font-family:'Inter',sans-serif;font-size:14px;color:#555;line-height:1.6}
-
-/* ── ARTICLE FOOTER ── */
-.article-footer-strip{background:#1a1a1a;color:#aaa;font-family:'Inter',sans-serif;font-size:12px;text-align:center;padding:22px 20px;line-height:1.9}
-.article-footer-strip a{color:#ffb612;text-decoration:none}
-
-/* ── STICKY BOTTOM BAR (mobile) ── */
-.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:#007a4d;padding:12px 20px;z-index:999;box-shadow:0 -3px 14px rgba(0,0,0,.2)}
-.sticky-cta a{display:block;background:#ffb612;color:#111;font-family:'Inter',sans-serif;font-size:16px;font-weight:700;text-align:center;padding:14px;border-radius:6px;text-decoration:none}
-@media(max-width:600px){.sticky-cta{display:block}.article-wrap{padding-bottom:90px}}
-
-/* ── RESPONSIVE ── */
-@media(max-width:600px){
-  .article-wrap{padding:0 14px 60px}
-  .cta-block{padding:24px 18px}
-  .cta-btn{font-size:15px;padding:15px 28px;width:100%;display:block}
-  .grant-amount{font-size:30px}
-  h1{font-size:clamp(22px,7vw,32px)}
-  .step{gap:12px}
-  .step-num{min-width:36px;height:36px;font-size:14px}
-}
+  @media (prefers-reduced-motion: reduce) {
+    .cta-btn, .popup { transition: none; }
+    .proof-dot { animation: none; }
+  }
 </style>
 </head>
 <body>
+<div class="card">
 
-<!-- TOP TICKER -->
-<div class="top-ticker">
-  🔴 BREAKING: R10,000 Grant Applications Now Open Nationwide
-  <span>· Apply before slots fill up ·</span>
-</div>
+  <!-- Full image — no crop, natural aspect ratio -->
+  <img class="hero-image"
+       src="https://ggranty6.carrd.co/assets/images/image01.jpg?v=3f489040"
+       alt="ZAR 10,000 Free Grants">
 
-<!-- NAV -->
-<nav class="site-nav">
-  <div class="nav-inner">
-    <div class="nav-logo">
-      <span class="flag">🇿🇦</span>
-      <div>
-        <strong>SA Financial Bulletin</strong>
-        <small>Independent Financial News</small>
+  <div class="content">
+
+    <!-- Live social proof bar -->
+    <div class="proof-bar">
+      <div class="proof-dot"></div>
+      <div class="proof-avatars">
+        <span>T</span><span>N</span><span>B</span>
       </div>
-    </div>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Grants</a>
-      <a href="#">Finance</a>
-      <a href="#">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<!-- BREADCRUMB -->
-<div class="breadcrumb">
-  <a href="#">Home</a><span>›</span>
-  <a href="#">Grants &amp; Funding</a><span>›</span>
-  R10,000 Grant 2026
-</div>
-
-<!-- ARTICLE -->
-<main class="article-wrap">
-  <div class="article-header">
-    <span class="cat-badge">💰 Financial Aid · Grants</span>
-    <h1>South Africa <span class="kicker">ZAR 10,000</span> Grants Ongoing</h1>
-    <p class="subheadline">South Africans from all provinces can now apply for a R10,000 cash grant — no credit checks, no collateral, and no repayment once approved. Here's everything you need to know.</p>
-
-    <!-- META -->
-    <div class="meta-row">
-      <div class="meta-avatar">NM</div>
-      <div class="meta-author">
-        <strong>Nomsa Mahlangu</strong> · Staff Financial Writer
-      </div>
-      <span class="meta-dot">·</span>
-      <span>26 September 2026</span>
-      <span class="meta-dot">·</span>
-      <span>4 min read</span>
-      <span class="meta-dot">·</span>
-      <span class="live-badge"><span class="live-dot"></span> Applications Open</span>
+      <p class="proof-text">2,453 people already claimed their free Grants!!</p>
     </div>
 
-    <!-- SHARE -->
-    <div class="share-row">
-      <span class="share-label">Share:</span>
-      <a class="share-btn share-wa" href="#">📱 WhatsApp</a>
-      <a class="share-btn share-fb" href="#">Facebook</a>
-      <a class="share-btn share-tw" href="#">𝕏 Twitter</a>
-      <a class="share-btn share-copy" href="#">🔗 Copy Link</a>
-    </div>
-  </div>
+    <!-- Headline -->
+    <h1 class="headline">
+      Follow The Steps Below To Receive <br>
+      <span class="amount">ZAR 10,000 </span>
+    </h1>
 
-  <!-- HERO IMAGE (SVG illustration — renders perfectly on all screens) -->
-  <div class="hero-img-wrap">
-    <svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%">
-      <defs>
-        <linearGradient id="skybg" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#003f20"/>
-          <stop offset="100%" stop-color="#006b38"/>
-        </linearGradient>
-        <linearGradient id="goldShine" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#ffe97a"/>
-          <stop offset="100%" stop-color="#d4a000"/>
-        </linearGradient>
-        <linearGradient id="bill1" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#2ecc71"/>
-          <stop offset="100%" stop-color="#27ae60"/>
-        </linearGradient>
-        <linearGradient id="bill2" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#f1c40f"/>
-          <stop offset="100%" stop-color="#d4ac0d"/>
-        </linearGradient>
-        <linearGradient id="bill3" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#e67e22"/>
-          <stop offset="100%" stop-color="#ca6f1e"/>
-        </linearGradient>
-        <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
-          <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="rgba(0,0,0,0.35)"/>
-        </filter>
-      </defs>
+    <p class="subline">Complete each step to qualify. Verification is required before your GRANT is issued.</p>
 
-      <!-- BG -->
-      <rect width="800" height="380" fill="url(#skybg)"/>
-
-      <!-- subtle texture dots -->
-      <circle cx="40" cy="40" r="2" fill="rgba(255,255,255,.06)"/>
-      <circle cx="760" cy="60" r="3" fill="rgba(255,255,255,.06)"/>
-      <circle cx="100" cy="330" r="2" fill="rgba(255,255,255,.06)"/>
-      <circle cx="700" cy="310" r="2.5" fill="rgba(255,255,255,.06)"/>
-
-      <!-- SOUTH AFRICAN FLAG strips decorative -->
-      <rect x="0" y="340" width="800" height="14" fill="#007a4d"/>
-      <rect x="0" y="354" width="800" height="13" fill="#ffb612"/>
-      <rect x="0" y="367" width="800" height="13" fill="#de3831"/>
-      <!-- black triangle -->
-      <polygon points="0,340 80,373 0,380" fill="#000"/>
-      <!-- gold outline triangle -->
-      <polygon points="0,340 68,373 0,380" fill="#ffb612"/>
-      <!-- green inner triangle -->
-      <polygon points="0,340 56,373 0,380" fill="#007a4d"/>
-
-      <!-- COINS in background -->
-      <circle cx="620" cy="200" r="55" fill="url(#goldShine)" opacity=".18"/>
-      <circle cx="620" cy="200" r="45" fill="url(#goldShine)" opacity=".2"/>
-      <circle cx="180" cy="170" r="42" fill="url(#goldShine)" opacity=".13"/>
-
-      <!-- BANK NOTES — fanned stack -->
-      <!-- Note 3 (back) -->
-      <g transform="rotate(-12,400,230)" filter="url(#shadow)">
-        <rect x="230" y="170" width="280" height="140" rx="8" fill="url(#bill3)" opacity=".85"/>
-        <rect x="242" y="182" width="256" height="116" rx="5" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
-        <text x="370" y="252" font-family="Georgia,serif" font-size="34" font-weight="bold" fill="rgba(255,255,255,.55)" text-anchor="middle">R100</text>
-      </g>
-      <!-- Note 2 (mid) -->
-      <g transform="rotate(-4,400,230)" filter="url(#shadow)">
-        <rect x="230" y="160" width="280" height="140" rx="8" fill="url(#bill2)" opacity=".9"/>
-        <rect x="242" y="172" width="256" height="116" rx="5" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
-        <text x="370" y="242" font-family="Georgia,serif" font-size="34" font-weight="bold" fill="rgba(255,255,255,.6)" text-anchor="middle">R200</text>
-      </g>
-      <!-- Note 1 (front) -->
-      <g filter="url(#shadow)">
-        <rect x="225" y="148" width="290" height="148" rx="9" fill="url(#bill1)"/>
-        <rect x="237" y="160" width="266" height="124" rx="6" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2"/>
-        <!-- Protea watermark -->
-        <circle cx="280" cy="224" r="28" fill="rgba(255,255,255,.12)"/>
-        <text x="280" y="230" font-family="serif" font-size="18" fill="rgba(255,255,255,.3)" text-anchor="middle">❀</text>
-        <!-- denomination -->
-        <text x="380" y="215" font-family="Georgia,serif" font-size="40" font-weight="bold" fill="rgba(255,255,255,.85)" text-anchor="middle">R100</text>
-        <text x="380" y="240" font-family="Georgia,serif" font-size="13" fill="rgba(255,255,255,.55)" text-anchor="middle">SOUTH AFRICAN RESERVE BANK</text>
-        <text x="455" y="270" font-family="Georgia,serif" font-size="22" font-weight="bold" fill="rgba(255,255,255,.6)" text-anchor="middle">100</text>
-      </g>
-
-      <!-- GOLD COINS -->
-      <circle cx="560" cy="265" r="30" fill="url(#goldShine)" stroke="#a07800" stroke-width="2" filter="url(#shadow)"/>
-      <circle cx="560" cy="265" r="24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
-      <text x="560" y="272" font-family="serif" font-size="17" font-weight="bold" fill="rgba(255,255,255,.8)" text-anchor="middle">R</text>
-
-      <circle cx="598" cy="285" r="22" fill="url(#goldShine)" stroke="#a07800" stroke-width="1.5" filter="url(#shadow)"/>
-      <circle cx="598" cy="285" r="17" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
-
-      <circle cx="240" cy="280" r="25" fill="url(#goldShine)" stroke="#a07800" stroke-width="2" filter="url(#shadow)"/>
-      <circle cx="240" cy="280" r="19" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
-
-      <!-- HEADLINE TEXT OVERLAY -->
-      <rect x="0" y="0" width="800" height="140" fill="rgba(0,0,0,0)"/>
-      <text x="400" y="55" font-family="Georgia,serif" font-size="17" font-weight="bold" fill="rgba(255,255,255,.7)" text-anchor="middle" letter-spacing="3">🇿🇦 SOUTH AFRICA · 2026</text>
-      <text x="400" y="95" font-family="Georgia,serif" font-size="clamp(22px,4vw,36px)" font-weight="bold" fill="#fff" text-anchor="middle">R10,000 Cash Grant</text>
-      <text x="400" y="126" font-family="Georgia,serif" font-size="16" fill="rgba(255,255,255,.75)" text-anchor="middle">Applications Now Open — All Provinces Welcome</text>
-    </svg>
-    <p class="img-caption">South Africans across all nine provinces are eligible to apply. (Illustration: SA Financial Bulletin)</p>
-  </div>
-
-  <!-- ARTICLE BODY -->
-  <div class="article-body">
-
-    <p class="lead">A R10,000 cash grant programme is currently accepting applications from qualifying South Africans — and the process takes less than five minutes to complete online.</p>
-
-    <p>The initiative, which has already helped thousands of South Africans since it launched earlier this year, provides direct cash disbursements to approved applicants — with no collateral required, no credit history checks, and <strong>no obligation to repay</strong> once approval is confirmed.</p>
-
-    <!-- GRANT HIGHLIGHT BOX -->
-    <div class="grant-box">
-      <div class="grant-box-title">Grant Details at a Glance</div>
-      <div class="grant-amount">R10,000 <span>ZAR</span></div>
-      <div style="font-family:'Inter',sans-serif;font-size:13px;color:#555;margin-top:4px">Paid directly to your bank account upon approval</div>
-      <div class="grant-tags">
-        <span class="grant-tag">✅ No credit check</span>
-        <span class="grant-tag">✅ No repayment required</span>
-        <span class="grant-tag">✅ All provinces eligible</span>
-        <span class="grant-tag">✅ Any South African bank</span>
-        <span class="grant-tag">⏳ Limited slots remaining</span>
-      </div>
-    </div>
-
-    <p>The programme is administered through a licensed South African financial institution, ensuring your personal information is protected and that all disbursements comply fully with the National Credit Act and FSCA regulations.</p>
-
-    <div class="pull-quote">
-      <p>"I applied on my phone during my lunch break. The money was in my account the very next day. I couldn't believe something this straightforward actually existed." — Ayanda T., Johannesburg</p>
-    </div>
-
-    <p>While the application route is structured through a formal lending partner, successful applicants are <strong>not required to repay the grant</strong>. This arrangement exists purely to ensure legal compliance and secure fund disbursement — not to create debt.</p>
-
-    <h2>How to Apply</h2>
+    <!-- Steps -->
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Click the button below</h3>
-          <p>Tap the "Apply Now" button on this page to be taken to the secure, encrypted application portal.</p>
-        </div>
+        <span class="step-text">Click the button below</span>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Enter your email &amp; basic info</h3>
-          <p>You'll be asked for your name, South African ID number, email address, and phone number. The form takes under 5 minutes to complete.</p>
-        </div>
+        <span class="step-text">Enter your email &amp; other basic info</span>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Submit all required information</h3>
-          <p>We use a licensed <strong>loan company as our payment facilitator</strong> — but please note: <strong>once you're approved, you do not repay the money.</strong> This structure is simply how the funds are released safely and legally.</p>
-        </div>
+        <span class="step-text">Submit all the required info needed  ( We use a licensed loan company as our payment facilitato but you're not repaying back once you're approved ) </span>
       </div>
       <div class="step">
         <div class="step-num">4</div>
-        <div class="step-body">
-          <h3>Receive your cash directly to your bank</h3>
-          <p>Once approved, <strong>R10,000 is deposited straight into your chosen bank account</strong> — Capitec, FNB, Absa, Standard Bank, Nedbank, TymeBank and more all accepted.</p>
-        </div>
+        <span class="step-text">Receive your cash directly to your preferred bank</span>
       </div>
     </div>
 
-    <!-- CTA -->
-    <div class="cta-block">
-      <h3>Ready to claim your R10,000?</h3>
-      <p>Applications are still open — but slots are limited and filling up fast.</p>
-      <a href="https://murtov.com/e59u?sub1=sub1&sub2=sub2&sub3=sub3&sub4=sub4&sub5=sub5" class="cta-btn" target="_blank" rel="noopener">✅ Apply for My Grant Now — Free</a>
-      <p class="cta-micro">
-        🔒 Encrypted &amp; secure
-        <span>·</span> Takes under 5 minutes
-        <span>·</span> No repayment once approved
-      </p>
-    </div>
+    <!-- CTA button -->
+    <a href="https://murtov.com/659u?sub1=sub1&sub2=sub2&sub3=sub3&sub4=sub4&sub5=sub5"
+       class="cta-btn"
+       target="_blank"
+       rel="noopener noreferrer">
+      Get Grants Now
+    </a>
 
-    <hr class="sec">
+    <p class="note">Available in selected countries &mdash; SOUTH AFRICA ONLY </p>
 
-    <!-- TESTIMONIALS -->
-    <h2>What South Africans Are Saying</h2>
-    <p class="testi-intro">Thousands have already received their R10,000. Here's what a few of them had to say:</p>
-
-    <div class="testimonials">
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p class="testi-text">"I saw this shared on a WhatsApp group and honestly thought it was another scam. But my cousin had already received the money, so I gave it a try. Three days later, R10,000 landed in my Capitec account. I used it to pay my children's school fees. Still can't believe it."</p>
-        <div class="testi-footer">
-          <div class="avi av1">TM</div>
-          <div class="testi-info">
-            <strong>Thandi Mkhize</strong>
-            <span>Durban, KwaZulu-Natal</span><br>
-            <span class="verified">✅ Verified Recipient · Received 18 Sep 2026</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p class="testi-text">"As a spaza shop owner in Soweto, I needed capital to restock. Banks kept turning me down because of my credit score. This application asked no awkward questions — just basic info. The money hit my FNB account within 48 hours. Life changing, I tell you."</p>
-        <div class="testi-footer">
-          <div class="avi av2">KN</div>
-          <div class="testi-info">
-            <strong>Kagiso Nkosi</strong>
-            <span>Soweto, Gauteng</span><br>
-            <span class="verified">✅ Verified Recipient · Received 21 Sep 2026</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p class="testi-text">"Single mum of two in Cape Town, I was behind on rent and really stressed. A colleague at work told me about this. I applied on my lunch break and got an approval SMS the next morning. R10,000 in my account by Friday. Whoever runs this — thank you from the bottom of my heart."</p>
-        <div class="testi-footer">
-          <div class="avi av3">LB</div>
-          <div class="testi-info">
-            <strong>Liezel Botha</strong>
-            <span>Mitchell's Plain, Western Cape</span><br>
-            <span class="verified">✅ Verified Recipient · Received 20 Sep 2026</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p class="testi-text">"I've been scammed before online so I was very careful. But the fact that they never asked for any upfront payment gave me confidence. I applied Tuesday, got confirmation Wednesday, and R10,000 was in my Absa account Thursday morning. 100% legit. Already told my whole family."</p>
-        <div class="testi-footer">
-          <div class="avi av4">SR</div>
-          <div class="testi-info">
-            <strong>Sipho Radebe</strong>
-            <span>Pretoria, Gauteng</span><br>
-            <span class="verified">✅ Verified Recipient · Received 22 Sep 2026</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr class="sec">
-
-    <!-- FAQ -->
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq">
-      <div class="faq-item">
-        <div class="faq-q">Do I really not have to pay the money back?</div>
-        <div class="faq-a">Correct. Once your application is reviewed and you are approved, the R10,000 is yours to keep. You will not receive any repayment demands.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Which banks are accepted?</div>
-        <div class="faq-a">All major South African banks are accepted, including Capitec, FNB, Absa, Standard Bank, Nedbank, TymeBank, African Bank, and Discovery Bank.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">How long does approval take?</div>
-        <div class="faq-a">Most applicants receive a response within 24–72 hours. Many have reported receiving the funds the very next business day.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Is there any upfront fee to apply?</div>
-        <div class="faq-a">No. The application is completely free. You will never be asked to pay anything upfront.</div>
-      </div>
-    </div>
-
-    <!-- BOTTOM CTA -->
-    <div class="cta-block" style="margin-top:8px">
-      <h3>Don't miss your slot — apply today</h3>
-      <p>Slots are limited and allocated on a first-come, first-served basis.</p>
-      <a href="https://murtov.com/e59u?sub1=sub1&sub2=sub2&sub3=sub3&sub4=sub4&sub5=sub5" class="cta-btn" target="_blank" rel="noopener">🇿🇦 Claim My R10,000 Grant Now</a>
-      <p class="cta-micro">Free to apply · Secure · No repayment once approved</p>
-    </div>
-
-    <!-- TAGS -->
-    <div style="margin-top:32px;font-family:'Inter',sans-serif;font-size:12.5px;color:#999">
-      <strong style="color:#555">Tags:</strong> &nbsp;
-      <a href="#" style="color:#007a4d;text-decoration:none;margin-right:10px">#SouthAfricaGrants</a>
-      <a href="#" style="color:#007a4d;text-decoration:none;margin-right:10px">#R10000Grant</a>
-      <a href="#" style="color:#007a4d;text-decoration:none;margin-right:10px">#FinancialAid2026</a>
-      <a href="#" style="color:#007a4d;text-decoration:none">#SASSA</a>
-    </div>
-
-  </div><!-- /article-body -->
-
-</main>
-
-<!-- SITE FOOTER -->
-<footer class="article-footer-strip">
-  <p>© 2026 SA Financial Bulletin · <a href="#">Privacy Policy</a> · <a href="#">Terms</a> · <a href="#">Contact Us</a></p>
-  <p style="margin-top:4px;font-size:11px;opacity:.6">This article is for informational purposes. Always verify financial opportunities independently before sharing personal information.</p>
-</footer>
-
-<!-- STICKY MOBILE CTA -->
-<div class="sticky-cta">
-  <a href="https://murtov.com/e59u?sub1=sub1&sub2=sub2&sub3=sub3&sub4=sub4&sub5=sub5" target="_blank" rel="noopener">✅ Apply for My R10,000 Grant — Free</a>
+  </div>
 </div>
 
+<!-- Toast testimonial popups -->
+<div class="popup" id="popup">
+  <div class="pop-avatar" id="pop-avatar">T</div>
+  <div>
+    <div class="pop-name" id="pop-name">Thabo M.</div>
+    <div class="pop-msg">just received <strong>ZAR 3,000</strong> to their Bank &#127881;</div>
+    <div class="pop-badge">&#10003; Verified via FNB</div>
+    <div class="pop-time" id="pop-time">2 minutes ago</div>
+  </div>
+</div>
+
+<script>
+  const people = [
+    { name:"Thabo M.",    init:"T", time:"2 minutes ago",  color:"#0070ba" },
+    { name:"Naledi K.",   init:"N", time:"5 minutes ago",  color:"#16a34a" },
+    { name:"Sipho D.",    init:"S", time:"9 minutes ago",  color:"#7c3aed" },
+    { name:"Ayanda Z.",   init:"A", time:"12 minutes ago", color:"#ea580c" },
+    { name:"Lerato M.",   init:"L", time:"16 minutes ago", color:"#dc2626" },
+    { name:"Bongani N.",  init:"B", time:"19 minutes ago", color:"#0d9488" },
+    { name:"Zanele P.",   init:"Z", time:"23 minutes ago", color:"#1d4ed8" },
+    { name:"Mpho S.",     init:"M", time:"27 minutes ago", color:"#92400e" },
+    { name:"Khanya T.",   init:"K", time:"31 minutes ago", color:"#be185d" },
+    { name:"Refiloe J.",  init:"R", time:"35 minutes ago", color:"#166534" },
+  ];
+
+  let idx = 0;
+  const popup  = document.getElementById('popup');
+  const pName  = document.getElementById('pop-name');
+  const pTime  = document.getElementById('pop-time');
+  const pAv    = document.getElementById('pop-avatar');
+
+  function show() {
+    const p = people[idx % people.length];
+    pName.textContent = p.name;
+    pTime.textContent = p.time;
+    pAv.textContent   = p.init;
+    pAv.style.background = p.color;
+    popup.classList.add('show');
+    setTimeout(() => popup.classList.remove('show'), 4200);
+    idx++;
+  }
+
+  setTimeout(() => { show(); setInterval(show, 7500); }, 1800);
+</script>
 </body>
 </html>
